@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- Linking to external CSS file -->
         <link rel="stylesheet" href="styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,19 +12,22 @@
     <body>
        <section class="hero">
            <nav>
-               <img class="logo" src="logo.png"alt="Barana Jean's logo"/>
+            <a href=index.html>
+               <img class="logo" src="logo.png"alt="Barana Jean's logo"/></a>
                <ul>
+                   <!-- Linking different pages -->
                    <li><a href="#about-me">About Me</a></li>
-                   <li>Projects</li>
-                   <li>Contact</li>
+                   <li><a href="resume.html">Resume</a></li>
+                   <li><a href="#projects">Projects</a></li>
+                   <li><a href="contact.html">Contact Me</a></li>
                </ul>
            </nav>
             <div class="hero-area">
                 <div class="hero-text">
                     <h1>Barana Jean</h1>
-                    <p>Student</p>
-                    <div class="button">About Me</div>
+                    <p>Recent Grad/Aspiring Software Developer, Data Analyst</p>
                 </div>
+           <!-- Buttons that link Twitter, Github, and Linkedin -->
            <div class="socials">
                <div><a href="https://www.twitter.com/" class="social">
                    <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="50" height="50" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg></a></div>
@@ -34,22 +38,33 @@
            </div>
          </div> 
        </section>
-       <section class="sub-section" id="#about-me">
+       <!-- About me section -->
+       <section class="sub-section" id="about-me">
            <div class="Information">
                <h2>About Me</h2>
-               <p>Hello, my name is Barana Jean. I am currently a student attending Gettysburg College, majoring in Computer Science.</p>
+               <p>Hello, my name is Barana Jean. I am a January 2024 graduate of Gettysburg College with a Bachelor of Science in Computer Science. I have experience in Java, Python, Javascript, and SQL.</p>
            </div>
+           <!-- Headshot -->
            <div class="headshot-container">
                <img class="headshot" src="headshot.JPG" alt="Barana Jean's headshot">
            </div>
        </section>
-       <section class="sub-section-alternative">
+
+       <!-- Projects Section -->
+       <section class="sub-section-alternative" id="projects">
            <h3>Projects</h3>
            <div class="project-container">
-               <div class="project-card"></div>
-               <div class="project-card"></div>
+               <!-- Bicycling/Air Quality jpg -->
+               <div class="project-card1">
+                   <img class="data_visual_project" src="aqi_good_days.png" alt="Visual of AQI good days in Philadelphia">
+               </div>
+               <!-- Spotify Data Science jpg -->
+               <div class="project-card2">
+                   <img class="data_analyst_project" src="Kpop_vs_American_graph.png"alt="Visual streaming performance of Kpop groups vs. American Artists">
+               </div>
            </div>
        </section>
+
        <footer></footer>
 
         <script src="app.js"></script>
