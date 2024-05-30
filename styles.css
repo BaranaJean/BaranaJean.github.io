@@ -122,14 +122,36 @@ p {
   align-items: center;
 }
 
-.project-card {
+.project-container {
+  /*position: relative;
+  display: flex;
+  justify-content: space-around;*/
+  height: 100%;      /* Equals maximum image height */
+  line-height: 25px;
+  width: 160px;
+  text-align: center;
+  margin: 1em 0;
+}
+
+.project-card1 {
+  /*position: fixed;
+  right: 0;
+  bottom: 0;
   width: 200px;
   height: 500px;
-  border: 1px solid black;
+  border: 1px solid black;*/
+  width: 500px;
+  margin: 20px auto;
   
 }
 
-.project-container {
-  display: flex;
-  justify-content: space-around;
+.project-card2 {
+  /*position: fixed;
+  float: right;
+  border: 1px solid black;*/
+  width: 500px;
+  margin: 20px auto;
+  x: 250px;
+  padding: 50px;
+  border-width: 10px;
 }
