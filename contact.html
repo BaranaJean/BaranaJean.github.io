@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="styles_contact.css">
+</head>
+<!-- Figure out why contact isnt connected to main html file -->
+<div class="container">
+	<div style="text-align:center">
+		<h2>Contact Me</h2>
+		<p>If you would like to contact me, leave a message to get in touch.</p>
+	</div>
+	<div class="row">
+		<!-- Get a image to put in this container -->
+		<!-- <div class="column">
+			<img src= Some image IDK>
+		</div> -->
+		<div class="column">
+			<form action="action_page.php">
+				<label for="fname">First Name</label>
+				<input type="text" id="fname" name="firstname" placeholder="Your name...">
+				<label for="lname">Last Name</label>
+				<input type="text" id="lname" name="lastname" placeholder="Your surname..">
+				<lable for="company">Company/Organization Name</lable>
+				<input type="text" id="company" placeholder="Your Organization..">
+				<label for="subject">Subject</label>
+				<textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+	</div>
+</div>
+</html>
